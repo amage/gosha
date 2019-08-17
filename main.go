@@ -19,7 +19,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		Count    uint
 	}
 	sweaters := Invertory{"wool", 17}
-	tmpl, err := template.ParseFiles("index.tpl")
+	tmpl, err := template.ParseFiles("templates/index.tpl")
 	if err != nil {
 		panic(err)
 	}
